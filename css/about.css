@@ -1,0 +1,24 @@
+#navbar ul li a {
+    font-size: 1.2rem;
+}
+
+#home h1 {
+    font-size: 1.8rem;
+}
+
+#home p {
+    font-size: 0.9rem;
+    color: whitesmoke;
+}
+
+#about-us {
+    flex-direction: row;
+}
+
+#about-us h1 {
+    font-size: 1.5rem;
+}
+
+#about-us p {
+    font-size: 0.7;
+}

@@ -1,0 +1,337 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* css variables */
+
+ :root {
+    --navbar-height: 59px;
+}
+
+
+/* navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #fedfdc;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* navigation bar: logo and image */
+
+#logo {
+    margin: -6px 20px;
+    /* height: 10px 10px; */
+}
+
+#logo img {
+    height: 65px;
+    margin: 10px 10px;
+}
+
+
+/* navigation bar: list and styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    /* font-size: 1.2rem; */
+}
+
+#navbar ul li a {
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    color: #d23976;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: whitesmoke;
+    background-color: rgb(236, 157, 183);
+}
+
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.00;
+}
+
+#home h1 {
+    color: #e40f91;
+    text-align: center;
+    /* font-family: 'Potta One', cursive; */
+    font-size: 3.5rem;
+    font-family: 'Russo One', sans-serif;
+}
+
+#home p {
+    color: #f9d8ec;
+    text-align: center;
+    /* font-family: 'Yusei Magic', sans-serif; */
+    font-size: 1.8rem;
+    font-family: 'Sofia', cursive;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* product section */
+
+#our-product {
+    display: flex;
+    flex-direction: column;
+    padding: 500px 100px;
+    height: 245px;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-product::before {
+    content: "";
+    position: absolute;
+    background: url(../bg_prod.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 85%;
+    z-index: -1;
+    opacity: 0.30;
+    padding: 200px 100px;
+}
+
+#product1 {
+    margin: 20px;
+    display: flex;
+}
+
+#product2 {
+    margin: 30px;
+    display: flex;
+}
+
+#product1 .box1 {
+    border: 4px solid #ce5555;
+    border-radius: 25px;
+    background-color: #fff7f2;
+    padding: 50px 10px;
+    margin: 25px 55px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#product1 .box1 img {
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+#product2 .box2 {
+    border: 4px solid #ce5555;
+    border-radius: 25px;
+    background-color: #fff7f2;
+    padding: 50px 10px;
+    margin: 25px 55px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#product2 .box2 img {
+    height: 130px;
+    display: block;
+    margin: auto;
+}
+
+
+/* About us section */
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 100px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us::before {
+    content: "";
+    position: absolute;
+    background: url(../bg-about.jpg) no-repeat center center/cover;
+    height: 50%;
+    width: 85%;
+    z-index: -1;
+    opacity: 0.50;
+    padding: 200px 100px;
+}
+
+#about-us h1 {
+    font-family: 'Potta One', cursive;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    color: rgba(5, 130, 141, 0.883);
+}
+
+#about-us p {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* contact-us section */
+
+#contacts {
+    position: relative;
+    /* top: 110px; */
+    /* padding: 120px 100px; */
+}
+
+#contacts::before {
+    content: "";
+    position: absolute;
+    background: url(../contact.jpg)no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* padding: 150px 100px; */
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box form {
+    width: 40%;
+}
+
+.contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Anton', sans-serif;
+    color: #757575;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 2px solid grey;
+}
+
+.btn-group input {
+    display: block;
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    background-color: #9e9e9e;
+    color: white;
+    padding: 7px 7px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    border: 2px solid #757575;
+    cursor: pointer;
+}
+
+
+/* footer section */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    /* margin: 255px 0px; */
+}
+
+
+/* utility classes */
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.order {
+    padding: 6px 40px;
+    border: 2px solid #c2969b;
+    border-radius: 10px;
+    background-color: #c2969b;
+    color: #ffe5e5;
+    margin: 18px;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#h-product {
+    padding: 120px 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+    color: rgb(146, 66, 66);
+}
+
+.h-nav {
+    font-family: 'Yusei Magic', sans-serif;
+}
